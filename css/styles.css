@@ -201,6 +201,9 @@ footer a {
     height: auto;
     margin-top: 1rem;
   }
+  main p {    
+    font-size: 1rem;    
+  }
   main section form {
     width: 85%;
     justify-content: center;

@@ -21,12 +21,12 @@
         <div>
             <img src="./img/divider.svg" alt="divisor de texto">
         </div>
-        <h3>¿Qué hacemos?</h3>
-        <p>¡Creamos tu fiesta! Realizamos los diseños imprimibles para tu evento con la temática y los colores que necesites.
+        <h3>¿Querés un diseño nuevo?</h3>
+        <p>Puedo crear los diseños imprimibles para tu evento con la temática y los colores que necesites.
         </p>        
         <p>Para ver el precio del kit personalizado, seleccioná en el cotizador los diseños que querés incluir, junto con la fecha del entrega deseada y el tema que hayas elegido.
         </p>
-        <p>Al confirmar tu pedido estaremos en contacto por Whatsapp para confirmarte disponibilidad de fechas, coordinar el pago, ultimar los detalles y comenzar a diseñar. 
+        <p>Al confirmar tu pedido estaremos en contacto por Whatsapp para confirmarte la disponibilidad de fecha, coordinar el pago, ultimar los detalles y comenzar a diseñar. 
         </p>
         <p><strong>Tiempo de preparación:</strong> 2 a 4 días hábiles</p>
         <section>           
@@ -82,8 +82,8 @@
                 <input type="text" id="partyTheme">
                 </div>
                 <div class="form_group">
-                    <label for="currency">                        ¿Cual es tu moneda de pago?</label> <br>
-                        <select>
+                    <label for="currency">                     ¿Cual es tu moneda de pago?</label> <br>
+                        <select id="currency">
                             <option value="pesoArg" selected>Peso argentino</option>
                             <option value="dolar">Dólar</option>
                             <option value="euro">Euro</option>                     
@@ -92,7 +92,7 @@
                 <p>Tu presupuesto:</p>
                 <div class="w-100 text-center">
                     <span>$</span>
-                    <span>0</span>
+                    <span id="amount">0</span>
                 </div>
                 <div class="text-center w-100">   
                     <button><i class="fab fa-whatsapp"></i>Lo confirmo!</button>
@@ -106,6 +106,8 @@
         </div>
         <a href="https://www.cumplekits.com" target="_blank"> www.cumplekits.com
         </a>
-    </footer>    
+    </footer>
+    <!--js-->
+    <script src="./js/calculator.js"></script>    
 </body>
 </html>
