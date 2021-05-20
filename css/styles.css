@@ -89,6 +89,25 @@ main section form p {
     width: 100%;
     padding-bottom: 1rem;
 }
+main section form input[type=text]{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #525252;  
+}
+main section form input[type=date]{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #525252;
+}
+main section form select{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #525252;
+}
+main section form :nth-child(16){
+  padding-bottom: 0;
+}
+
 .form_group{
     width: 45%;
     padding: 0.5rem 0;
