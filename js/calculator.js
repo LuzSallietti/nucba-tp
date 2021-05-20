@@ -34,7 +34,7 @@ const checkboxes = document. querySelectorAll('input[type="checkbox"]');
 
 checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', () => {
-        msg = "Hola! Quiero confirmar mi presupuesto. Estos son los diseños que necesito: ";
+        msg = "Hola! Quiero confirmar mi presupuesto de diseño personalizado. Estos son los diseños que necesito: ";
         total = 0;
         currency.value="pesoArg";
         curr_symbol.innerText = "$";                
