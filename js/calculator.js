@@ -27,8 +27,8 @@ let total = 0;
 let usd_total = 0;
 let euro_total = 0;
 let msg;
-let final_budget;
-let final_currency;
+let final_budget = 0;
+let final_currency = "pesos";
 const confirmButton = document.getElementsByTagName("button");
 const checkboxes = document. querySelectorAll('input[type="checkbox"]');
 
@@ -80,7 +80,7 @@ checkboxes.forEach(checkbox => {
             msg +="fajas para botellas/";
         }         
          amount.innerHTML=total;
-         console.log(msg); 
+         final_budget = total;          
     })
 })
 currency.addEventListener('change', () => {
@@ -111,6 +111,6 @@ confirmButton[0].addEventListener('click', (e) => {
     let delivery_date = date.value;
     let theme = partyTheme.value;
     console.log(msg);    
-    window.open(`https://wa.me/5493574437945?text=${msg}%20El%20precio%20es%20${final_budget}%20${final_currency}%20y%20la%20temática%20que%20elegí%20es%20${theme}.%20Necesito%20los%20diseños%20para%20esta%20fecha:%20${delivery_date}`, '_blank');
+    window.open(`https://wa.me/5493574437945?text=${msg}.%20El%20precio%20es%20${final_budget}%20${final_currency}%20y%20la%20temática%20que%20elegí%20es%20${theme}.%20Necesito%20los%20diseños%20para%20esta%20fecha:%20${delivery_date}`, '_blank');
 });
 
